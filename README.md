@@ -53,15 +53,17 @@ Plugin Configuration
 | --- | ------------|
 | url | URL to the mosquitto server, default "mqtt://localhost" |
 | topic | mqtt topic of monitoring device |
-| username | mosquitto server user if required |
-| password | mosquitto server password if required |
-| delay | time to delay in milliseconds |
-| openanddelay | contact sensor is open if "true" and then timer delay, if "false" timer delay and the contact sensor is open , default "false" |
+| username | mosquitto server user, if required |
+| password | mosquitto server password, if required |
+| delay | time to delay in milliseconds, default 5000 |
+| openanddelay | contact sensor is open, if "true" and then timer delay, if "false" timer delay and then contact sensor is open, default "false" |
 | debug | write debugmessages to log, default "false" |
 
 # Info about where the plugin comes from
 This plugin is based on:
+
 https://github.com/heisice/homebridge-mqtt-contactsensor
+
 https://github.com/nitaybz/homebridge-delay-switch
 
 
