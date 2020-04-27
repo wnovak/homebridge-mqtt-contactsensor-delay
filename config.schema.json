@@ -1,0 +1,58 @@
+{
+    "pluginAlias": "mqtt-contactsensor-delay",
+    "pluginType": "accessory",
+    "singular": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "description": "The name of the device - used in HomeKit apps as well as Siri",
+                "required": true
+            },
+            "url": {
+                "title": "Url",
+                "type": "string",
+                "default": "mqtt://localhost",
+                "description": "URL to the mosquitto server, default 'mqtt://localhost'",
+                "required": true
+            },
+            "topic": {
+                "title": "Topic",
+                "type": "string",
+                "default": "home/livingroom/contactsensor",
+                "description": "Mqtt topic of monitoring device",
+                "required": true
+            },
+            "username": {
+                "title": "Username",
+                "type": "string",
+                "description": "Mosquitto server user, if required "
+            },
+            "password": {
+                "title": "Password",
+                "type": "string",
+                "description": "Mosquitto server password, if required "
+            },
+            "delay": {
+                "title": "Delay",
+                "type": "number",
+                "default": 5000,
+                "description": "Time to delay in milliseconds, default 5000"
+            },
+            "openanddelay": {
+                "title": "Openanddelay",
+                "type": "boolean",
+                "default": false,
+                "description": "Contact sensor is open, if 'true' and then timer delay, if 'false' timer delay and then contact sensor is open, default 'false'"
+            },
+            "debug": {
+                "title": "Debug",
+                "type": "boolean",
+                "default": false,
+                "description": "Write debugmessages to log, default 'false'"
+            }
+        }
+    }
+}

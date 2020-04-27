@@ -46,13 +46,13 @@ Plugin Configuration
 | --- | ------------|
 | accessory | The type of accessory - has to be "mqtt-contactsensor-delay" |
 | name | The name of the device - used in HomeKit apps as well as Siri |
+| url | URL to the mosquitto server, default "mqtt://localhost" |
+| topic | mqtt topic of monitoring device |
 
 ### Optional configuration
 
 | Key | Description |
 | --- | ------------|
-| url | URL to the mosquitto server, default "mqtt://localhost" |
-| topic | mqtt topic of monitoring device |
 | username | mosquitto server user, if required |
 | password | mosquitto server password, if required |
 | delay | time to delay in milliseconds, default 5000 |
