@@ -1,12 +1,8 @@
 {
-  "author": {
-    "name": "Werner Novak",
-    "email": "wernernov@gmail.com"
-  },
+  "author": "Werner Novak <wernernov@gmail.com>",
   "bugs": {
     "url": "https://github.com/wnovak/homebridge-mqtt-contactsensor-delay/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "mqtt": "^1.12.0"
   },
