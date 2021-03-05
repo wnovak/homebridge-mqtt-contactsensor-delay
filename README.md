@@ -29,6 +29,7 @@ Sample HomeBridge Configuration
           "password": "password",
           "delay": "15000",
           "openanddelay": false,
+          "reversedetect": false,
           "debug": false
         }
       ],
@@ -57,6 +58,7 @@ Plugin Configuration
 | password | mosquitto server password, if required |
 | delay | time to delay in milliseconds, default 5000 |
 | openanddelay | contact sensor is open, if "true" and then timer delay, if "false" timer delay and then contact sensor is open, default "false" |
+| reversedetect | contact sensor detection is reversed |
 | debug | write debugmessages to log, default "false" |
 
 # Info about where the plugin comes from
