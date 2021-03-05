@@ -17,6 +17,7 @@ function ContactSensorDelayAccessory(log, config) {
 	this.sn = config['sn'] || 'Unknown';
 	this.delay = config['delay'] || 5000;
 	this.openanddelay = config['openanddelay'] || false;
+	this.reversedetect = config['reversedetect'] || false;
 	this.debug = config['debug'] || false;
 	this.timer;
 	this.timer2;
@@ -54,9 +55,9 @@ function ContactSensorDelayAccessory(log, config) {
 		data = JSON.parse(message);
                 } catch (e) {
                 if (message.toString() === "ON") {
-                   data = "0";
+                   data = self.reversedetect ? "1" : "0";
                 } else {
-                   data = "1";
+                   data = self.reversedetect ? "0" : "1";
                 }
                 }
 		if (data === null) return null;
